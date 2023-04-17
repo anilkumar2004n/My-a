@@ -1,0 +1,156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar{
+    background-color: maroon;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 25px;
+    column-gap: 20px;
+}
+
+.navbutton{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.navbutton a{
+    color: beige;
+    text-decoration: none;
+    width: 60px;
+    height: 21px;
+    padding: 2px 15px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navbutton a:hover{
+    background-color: green;
+    color: beige;
+}
+
+.navprofile {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    
+}
+.menuicon{
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+}
+
+.menuicon i{
+    color: beige;
+    font-size: 30px;
+}
+.profilebody{
+    height: 90vh;
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pic{
+    object-fit: cover ;
+    width: 350px;
+    height: 500px;
+    border-radius: 100px;
+}
+
+.t1{
+    font-size: 30px;
+    color: beige;
+
+}
+.t1::first-letter{
+    font-size: 50px;
+    color: yellow;
+}
+.t2{
+    font-size: 50px;
+    color: yellow;
+}
+.t3{
+    font-style: italic;
+    color: beige;
+    font-size: 30px;
+}
+
+.skillslist{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 20px;
+}
+
+.skillslist p{
+    padding: 3px 15px;
+    text-align: center;
+    width: 70px;
+    color: black;
+    background-image: linear-gradient(to right, yellow,green);
+    border-radius: 25px;
+}
+
+.aboutbody{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.title{
+    font-size: 25px;
+    color: maroon;
+    text-decoration: underline 3px black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px ;
+}
+
+.aboutinfo{
+
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .navbar.active{
+        height: 160px;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .navbar .navbutton{
+        display: none;
+    }
+    .navbar.active .navbutton{
+        display: grid;
+        row-gap: 15px;
+
+    }
+    .navprofile{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+
+    }
+    .menuicon{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    
+    }
+}
+
+

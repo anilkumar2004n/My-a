@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./w3.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div onclick="openmenu()"  class="menuicon"><i class="bi-list"></i></div>
+        <div class="navbutton">
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#education">education</a>
+            <a href="#support">support</a>
+        </div>
+        <img class="navprofile" src="./thumbnails/IMG_20221027_085112.jpg" alt="Profile"/>
+    </nav>
+    <main>
+        <div class="profilebody">
+            <div class="info">
+                <p class="t1">Hai It's me</p>
+                <p class="t2">Chaithu</p>
+                <p class="t3">The Rock Star</p>
+                <div class="skillslist">
+                    <p>Rock</p>
+                    <p>Pop</p>
+                    <p>Jazz</p>
+                </div>
+            </div>
+            <div>
+                <img class="pic" src="./thumbnails/WhatsApp Image 2023-04-17 at 15.57.52.jpg" alt="Profile"/>
+            </div>
+        </div>
+        <div id="about" class="aboutbody">
+            <p class="title">About Me</p>
+            <div class="aboutinfo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis possimus suscipit dolore provident sint illum harum ad quibusdam deserunt odio molestiae officiis impedit assumenda, quos minus aspernatur sit commodi eius.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function openmenu(){
+        document.getElementById('navbar')?.classList.toggle('active')
+    }
+</script>
+</html>
